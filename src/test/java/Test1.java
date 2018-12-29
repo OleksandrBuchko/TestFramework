@@ -1,12 +1,10 @@
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class Test1 extends WebTest {
 
-    public void testTest1(){
-        System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
+    @Test
+    public void testTest1() throws InterruptedException {
         driver.get("https://www.google.com.ua");
-        driver.quit();
+        Thread.sleep(5000);
     }
 }

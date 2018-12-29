@@ -1,9 +1,9 @@
 import org.testng.annotations.Test;
 
-public class Test2 extends WebTest {
+public class Test4 extends WebTest {
 
     @Test
-    public void testTest2() {
+    public void testTest4() {
         driver.get("https://www.google.com.ua");
     }
 
