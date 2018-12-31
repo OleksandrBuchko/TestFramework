@@ -20,29 +20,29 @@ public class WebTest extends AbstractWebTest {
     }
 
     @BeforeClass
-    public void beforeClass(){
+    public void beforeClass() {
         System.out.println("beforeClass.............................");
     }
 
     @AfterClass
-    public void afterClass(){
+    public void afterClass() {
         System.out.println("afterClass.............................");
     }
 
     @BeforeTest
-    public void beforeTest(){
+    public void beforeTest() {
 
         System.out.println("beforeTest.............................");
     }
 
     @AfterTest
-    public void afterTest(){
+    public void afterTest() {
 
         System.out.println("afterTest.............................");
     }
 
     @BeforeSuite
-    public void beforeSuite(){
+    public void beforeSuite() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("headless");
@@ -51,19 +51,19 @@ public class WebTest extends AbstractWebTest {
     }
 
     @AfterSuite
-    public void afterSuite(){
+    public void afterSuite() {
         driver.quit();
 
         System.out.println("afterSuite.............................");
     }
 
     @BeforeGroups
-    public void beforeGroups(){
+    public void beforeGroups() {
         System.out.println("beforeGroups.............................");
     }
 
     @AfterGroups
-    public void afterGroups(){
+    public void afterGroups() {
         System.out.println("afterGroups.............................");
     }
 
