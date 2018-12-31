@@ -4,7 +4,9 @@ public class Test4 extends WebTest {
 
     @Test
     public void testTest4() {
-        driver.get("https://www.google.com.ua");
+        //driver.get("https://www.google.com.ua");
+        System.err.println("Test4");
+
     }
 
 }
