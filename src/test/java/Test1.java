@@ -3,7 +3,7 @@ import org.testng.annotations.Test;
 
 public class Test1 extends WebTest {
 
-    @Test
+    @Test(priority=3)
     @Step("Test1")
     public void testTest1() throws InterruptedException {
         //driver.get("https://www.google.com.ua");

@@ -2,7 +2,7 @@ import org.testng.annotations.Test;
 
 public class Test2 extends WebTest {
 
-    @Test
+    @Test(priority=0)
     public void testTest2() throws InterruptedException {
         //driver.get("https://www.google.com.ua");
         System.err.println("Test2");
